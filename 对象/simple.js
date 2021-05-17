@@ -1,13 +1,11 @@
 let hello = 'hello';
 let world = 'world';
 let obj = {
-  hello: hello,
-  world: world
-};
-console.log(obj);
-
-let obj2 = {
   hello,
-  world
+  world,
+  sayHello() {
+    console.log(hello);
+  }
 };
-console.log(obj2);
+
+obj.sayHello();
