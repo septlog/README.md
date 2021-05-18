@@ -26,3 +26,9 @@ let descriptor = Object.getOwnPropertyDescriptor(personClone3, 'name');
 // console.log(descriptor.get);
 console.log(descriptor.get);
 console.log(personDescriptor);
+// ! Object.assign()方法实行的是浅拷贝，而不是深拷贝。也就是说，如果源对象某个属性的值是对象，那么目标对象拷贝得到的是这个对象的引用。
+const obj1 = { a: { b: 1 } };
+const obj2 = Object.assign({}, obj1);
+
+obj1.a.b = 2;
+obj2.a.b; // 2
