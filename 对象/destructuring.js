@@ -3,7 +3,7 @@ let stu = { name: 'hello', age: 100 };
 let { name, age } = stu;
 console.log(name);
 console.log(age);
-
+// ! 数组的结构复制。
 let apples = ['apple1', 'apple2', 'apple3', 'apple4'];
 let [apple1, apple2, apple3, apple4] = apples;
 console.log(apple1);
