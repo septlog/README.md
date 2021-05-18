@@ -1,3 +1,4 @@
+// ! 对象的结构赋值。
 let stu = { name: 'hello', age: 100 };
 let { name, age } = stu;
 console.log(name);
