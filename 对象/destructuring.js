@@ -16,13 +16,14 @@ let [, , , apple4th] = apples;
 console.log(apple4th);
 console.log('-----------------------------------------------');
 // ! 多维数组的结构赋值。
-let colors = ['red', ['green', 'lightgreen'], 'blue'];
-let [firstColor, [secondColor]] = colors;
-console.log(firstColor);
-console.log(secondColor);
+let colors = [];
+// let [firstColor, [secondColor]] = colors;
+// console.log(firstColor);
+// console.log(secondColor);
 
 console.log('-----------------------------------------------');
 let restColors;
 [firstColor, ...restColors] = colors;
+console.log(firstColor);
 console.log(restColors);
 console.log('-----------------------------------------------');

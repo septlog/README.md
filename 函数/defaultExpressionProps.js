@@ -4,9 +4,9 @@ function getValue() {
 function add(first, second = getValue()) {
   return first + second;
 }
-console.log(add(1)); // ! 2
+console.log(add(1, 10)); // ! 2
 
 function add2(first, second = first) {
   return first + second;
 }
-console.log(add2(1)); // ! 2
+console.log(add2(10)); // ! 2
