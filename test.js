@@ -1,9 +1,10 @@
-var a = 2;
-function foo() {
-  console.log(this.a);
+const fs = require('fs');
+for (let i = 0; i < 100000000000; i++) {
+  fs.writeFile('./ok', 'data', (err) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log('nice');
+  });
 }
-let obj = { a: 100, foo };
-obj.foo(); // 100
-setTimeout(() => {
-  obj.foo(); // 100
-}, 100);
